@@ -21,3 +21,6 @@ _, inds = tree.query(query, k=3)
 with open("out.csv", "w") as f:
     f.write("top1_title,top1_id,top2_title,top2_id,top3_title,top3_id\n")
     f.write("\n".join(f"{rows[t[0]]},{rows[t[1]]},{rows[t[2]]}" for t in inds))
+
+with open("done.pipe", "w") as d:
+    d.write("0\n")
