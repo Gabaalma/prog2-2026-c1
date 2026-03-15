@@ -1,3 +1,15 @@
+# macOS
+.DS_Store
+venv
+
+# Grid local data
+solutions/Grid/grid_data.json
+solutions/Grid/grid_params.json
+solutions/Grid/*.parquet
+
+# Python
+__pycache__/
+*.pyc
 __pycache__
 .ipynb_checkpoints
 *.csv

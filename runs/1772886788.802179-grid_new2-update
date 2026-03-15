@@ -1,0 +1,5 @@
+inputs: 5000
+queries: 50
+setup: 0.403218
+preproc: 1.363298
+compute: 0.218881

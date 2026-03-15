@@ -3,11 +3,13 @@ import pandas as pd
 df = pd.read_csv("clean.csv")
 query_df = pd.read_csv("query.csv")
 
+
+
 out = []
 for idx, row in query_df.iterrows():
 
-    diffs = df[["x", "y"]] - row
-    squares = diffs**2
+    diffsx = df[["x", "y"]] - row
+    squares = diffsx**2
     dists = squares.sum(axis=1) ** 0.5
     sorted_dists = dists.sort_values()
 
